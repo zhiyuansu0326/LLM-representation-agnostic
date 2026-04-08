@@ -108,6 +108,4 @@ Install: `pip install -r requirements.txt`
 
 ---
 
-## Citation
 
-> Work in progress. NeurIPS 2026 submission target.
