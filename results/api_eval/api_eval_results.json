@@ -1,0 +1,875 @@
+{
+  "metadata": {
+    "run_date": "2026-04-10T01:17:32.204161",
+    "api_base": "http://14.103.68.46",
+    "models": [
+      "claude-opus-4-5",
+      "qwen3-235b-a22b"
+    ],
+    "n_stimuli": 20,
+    "hypothesis": "RMR — Representation-Mediated Reasoning",
+    "test": "cross-form reasoning performance consistency"
+  },
+  "comparison": [
+    {
+      "model": "claude-opus-4-5",
+      "overall_acc": 1.0,
+      "nl_acc": 1.0,
+      "formal_acc": 1.0,
+      "nl_formal_gap": 0.0,
+      "by_form": {
+        "en_prose": 1.0,
+        "py_code": 1.0,
+        "math": 1.0,
+        "zh_prose": 1.0
+      },
+      "by_concept": {
+        "recursive_decomposition": 1.0,
+        "transitivity": 1.0,
+        "sorting_by_criterion": 1.0,
+        "set_intersection": 1.0,
+        "causal_chain": 1.0
+      }
+    },
+    {
+      "model": "qwen3-235b-a22b",
+      "overall_acc": 1.0,
+      "nl_acc": 1.0,
+      "formal_acc": 1.0,
+      "nl_formal_gap": 0.0,
+      "by_form": {
+        "en_prose": 1.0,
+        "py_code": 1.0,
+        "math": 1.0,
+        "zh_prose": 1.0
+      },
+      "by_concept": {
+        "recursive_decomposition": 1.0,
+        "transitivity": 1.0,
+        "sorting_by_criterion": 1.0,
+        "set_intersection": 1.0,
+        "causal_chain": 1.0
+      }
+    }
+  ],
+  "per_model_details": {
+    "claude-opus-4-5": {
+      "overall": 1.0,
+      "by_form": {
+        "en_prose": 1.0,
+        "py_code": 1.0,
+        "math": 1.0,
+        "zh_prose": 1.0
+      },
+      "by_concept": {
+        "recursive_decomposition": 1.0,
+        "transitivity": 1.0,
+        "sorting_by_criterion": 1.0,
+        "set_intersection": 1.0,
+        "causal_chain": 1.0
+      },
+      "by_lang_type": {
+        "natural_language": 1.0,
+        "formal": 1.0
+      },
+      "nl_vs_formal_gap": 0.0,
+      "n_correct": 20,
+      "n_total": 20
+    },
+    "qwen3-235b-a22b": {
+      "overall": 1.0,
+      "by_form": {
+        "en_prose": 1.0,
+        "py_code": 1.0,
+        "math": 1.0,
+        "zh_prose": 1.0
+      },
+      "by_concept": {
+        "recursive_decomposition": 1.0,
+        "transitivity": 1.0,
+        "sorting_by_criterion": 1.0,
+        "set_intersection": 1.0,
+        "causal_chain": 1.0
+      },
+      "by_lang_type": {
+        "natural_language": 1.0,
+        "formal": 1.0
+      },
+      "nl_vs_formal_gap": 0.0,
+      "n_correct": 20,
+      "n_total": 20
+    }
+  },
+  "per_stimulus_responses": {
+    "claude-opus-4-5": [
+      {
+        "concept_id": 0,
+        "form_id": 0,
+        "concept_name": "recursive_decomposition",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 1,
+        "concept_name": "recursive_decomposition",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 2,
+        "concept_name": "recursive_decomposition",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 3,
+        "concept_name": "recursive_decomposition",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 0,
+        "concept_name": "transitivity",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 1,
+        "concept_name": "transitivity",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 2,
+        "concept_name": "transitivity",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 3,
+        "concept_name": "transitivity",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 0,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 1,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 2,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 3,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 0,
+        "concept_name": "set_intersection",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 1,
+        "concept_name": "set_intersection",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 2,
+        "concept_name": "set_intersection",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 3,
+        "concept_name": "set_intersection",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 0,
+        "concept_name": "causal_chain",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 1,
+        "concept_name": "causal_chain",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 2,
+        "concept_name": "causal_chain",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 3,
+        "concept_name": "causal_chain",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "claude-opus-4-5"
+      }
+    ],
+    "qwen3-235b-a22b": [
+      {
+        "concept_id": 0,
+        "form_id": 0,
+        "concept_name": "recursive_decomposition",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 1,
+        "concept_name": "recursive_decomposition",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 2,
+        "concept_name": "recursive_decomposition",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 3,
+        "concept_name": "recursive_decomposition",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 0,
+        "concept_name": "transitivity",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 1,
+        "concept_name": "transitivity",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 2,
+        "concept_name": "transitivity",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 3,
+        "concept_name": "transitivity",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 0,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 1,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 2,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 3,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 0,
+        "concept_name": "set_intersection",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 1,
+        "concept_name": "set_intersection",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 2,
+        "concept_name": "set_intersection",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 3,
+        "concept_name": "set_intersection",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 0,
+        "concept_name": "causal_chain",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 1,
+        "concept_name": "causal_chain",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 2,
+        "concept_name": "causal_chain",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 3,
+        "concept_name": "causal_chain",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      }
+    ]
+  },
+  "per_stimulus_responses_full": {
+    "claude-opus-4-5": [
+      {
+        "concept_id": 0,
+        "form_id": 0,
+        "concept_name": "recursive_decomposition",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "response": "Looking at this problem, I need to trace how the problem size decreases with each level of recursion.\n\nStarting with n=8, each step splits the problem into 2 sub-problems of half the size:\n\n- Depth 0: size 8\n- Depth 1: size 4\n- Depth 2: size 2\n- Depth 3: size 1 (base case)\n\nThe minimum depth needed to reach size 1 from size 8 is **3**.",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 1,
+        "concept_name": "recursive_decomposition",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "response": "3",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 2,
+        "concept_name": "recursive_decomposition",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "response": "Looking at the recursion pattern:\n- Start with n = 8\n- Each step splits into 2 sub-problems of half the size\n\nTracing the recursion depth:\n- Depth 0: n = 8\n- Depth 1: n = 4 (after first split: 8/2 = 4)\n- Depth 2: n = 2 (after second split: 4/2 = 2)\n- Depth 3: n = 1 (after third split: 2/2 = 1) — base case reached\n\nThe minimum depth needed is 3.\n\n3",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 3,
+        "concept_name": "recursive_decomposition",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "response": "Looking at this problem:\n\n- Start with n = 8\n- Each step splits into 2 sub-problems of half the size\n- Need to reach base case of size 1\n\nTracing the recursion depth:\n- Depth 0: size 8\n- Depth 1: size 4\n- Depth 2: size 2\n- Depth 3: size 1 (base case)\n\nThe minimum depth needed is 3.\n\n3",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 0,
+        "concept_name": "transitivity",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "response": "Alice is taller than Carol.",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 1,
+        "concept_name": "transitivity",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "response": "Based on the transitivity relation defined in the code, we can conclude that Alice is taller than Carol.",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 2,
+        "concept_name": "transitivity",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "response": "Based on the transitivity definition, since \"is taller than\" is a transitive relation, we can conclude that Alice is taller than Carol.",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 3,
+        "concept_name": "transitivity",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "response": "Based on the transitivity of the \"taller than\" relation, we can conclude that Alice is taller than Carol.",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 0,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "response": "Based on the method described, I need to arrange the items so that adjacent items have key values in non-decreasing order.\n\nThe key values are:\n- apple: 3\n- banana: 1\n- cherry: 2\n\nOrdering from smallest to largest key value (1, 2, 3):\n\nbanana, cherry, apple",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 1,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "response": "Based on the key function values:\n- apple: 3\n- banana: 1\n- cherry: 2\n\nSorting from smallest to largest key (1, 2, 3):\n\nbanana, cherry, apple",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 2,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "response": "Looking at the key function values:\n- key(apple) = 3\n- key(banana) = 1\n- key(cherry) = 2\n\nSorting from smallest to largest key value:\n- Smallest: banana (key = 1)\n- Middle: cherry (key = 2)\n- Largest: apple (key = 3)\n\nbanana, cherry, apple",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 3,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "response": "I need to sort the items based on their key function values from smallest to largest.\n\nGiven:\n- key(apple) = 3\n- key(banana) = 1\n- key(cherry) = 2\n\nOrdering by key values from smallest to largest:\n- banana (key = 1)\n- cherry (key = 2)\n- apple (key = 3)\n\nbanana, cherry, apple",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 0,
+        "concept_name": "set_intersection",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "response": "Looking at the two sets:\n- A = {1, 2, 3, 4}\n- B = {3, 4, 5, 6}\n\nI need to find elements that belong to both A and B simultaneously.\n\nChecking each element:\n- 1: in A, not in B\n- 2: in A, not in B\n- 3: in A, in B ✓\n- 4: in A, in B ✓\n- 5: not in A, in B\n- 6: not in A, in B\n\nA ∩ B = {3, 4}",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 1,
+        "concept_name": "set_intersection",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "response": "Looking at the `intersect` function, it returns elements that are in both A and B.\n\nA = {1, 2, 3, 4}\nB = {3, 4, 5, 6}\n\nChecking each element of A:\n- 1: not in B\n- 2: not in B\n- 3: in B ✓\n- 4: in B ✓\n\nA ∩ B = {3, 4}",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 2,
+        "concept_name": "set_intersection",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "response": "Looking at the definition: A ∩ B = { x | x ∈ A ∧ x ∈ B }\n\nThis means I need to find all elements that are in **both** A and B.\n\nA = {1, 2, 3, 4}\nB = {3, 4, 5, 6}\n\nChecking each element:\n- 1: in A, not in B ✗\n- 2: in A, not in B ✗\n- 3: in A, in B ✓\n- 4: in A, in B ✓\n- 5: not in A,",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 3,
+        "concept_name": "set_intersection",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "response": "Based on the definition, the intersection A ∩ B contains all elements that belong to both set A and set B simultaneously.\n\nA = {1, 2, 3, 4}\nB = {3, 4, 5, 6}\n\nElements in both A and B: 3 and 4\n\n**A ∩ B = {3, 4}**",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 0,
+        "concept_name": "causal_chain",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "response": "No. Intervening on B breaks the causal chain between A and C, so A's effect can no longer propagate through B to reach C.",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 1,
+        "concept_name": "causal_chain",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "response": "No. When we intervene to set B to False (intervene_on_b=True), the causal chain from A to C is broken because C depends only on B, and B is forced to be False regardless of whether A occurs.",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 2,
+        "concept_name": "causal_chain",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "response": "No. Since the causal structure A → B → C shows that B fully mediates the effect of A on C, intervening to block B breaks the only causal pathway through which A can influence C.",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 3,
+        "concept_name": "causal_chain",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "response": "No. Intervening to prevent event B cuts off the causal pathway through which event A influences event C, so A can no longer lead to C.",
+        "correct": true,
+        "model": "claude-opus-4-5"
+      }
+    ],
+    "qwen3-235b-a22b": [
+      {
+        "concept_id": 0,
+        "form_id": 0,
+        "concept_name": "recursive_decomposition",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "response": "3",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 1,
+        "concept_name": "recursive_decomposition",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "response": "3",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 2,
+        "concept_name": "recursive_decomposition",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "response": "3",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 0,
+        "form_id": 3,
+        "concept_name": "recursive_decomposition",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "response": "3",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 0,
+        "concept_name": "transitivity",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "response": "Alice is taller than Carol.",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 1,
+        "concept_name": "transitivity",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "response": "Alice is taller than Carol.",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 2,
+        "concept_name": "transitivity",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "response": "Alice is taller than Carol.",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 1,
+        "form_id": 3,
+        "concept_name": "transitivity",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "response": "Alice is taller than Carol.",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 0,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "response": "banana,cherry,apple",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 1,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "response": "banana,cherry,apple",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 2,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "response": "banana,cherry,apple",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 2,
+        "form_id": 3,
+        "concept_name": "sorting_by_criterion",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "response": "banana,cherry,apple",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 0,
+        "concept_name": "set_intersection",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "response": "{3, 4}",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 1,
+        "concept_name": "set_intersection",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "response": "{3, 4}",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 2,
+        "concept_name": "set_intersection",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "response": "A ∩ B = {3, 4}",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 3,
+        "form_id": 3,
+        "concept_name": "set_intersection",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "response": "A ∩ B = {3, 4}",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 0,
+        "concept_name": "causal_chain",
+        "form_name": "en_prose",
+        "is_natural_language": 1,
+        "response": "No. Intervening on B breaks the causal chain between A and C, preventing A's effect from propagating to C.",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 1,
+        "concept_name": "causal_chain",
+        "form_name": "py_code",
+        "is_natural_language": 0,
+        "response": "No. Intervening to prevent event B severs the causal chain (A → B → C), so event A no longer leads to event C.",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 2,
+        "concept_name": "causal_chain",
+        "form_name": "math",
+        "is_natural_language": 0,
+        "response": "No. Because intervening to prevent B severs the causal path from A to C, leaving no alternative pathways for A to influence C.",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      },
+      {
+        "concept_id": 4,
+        "form_id": 3,
+        "concept_name": "causal_chain",
+        "form_name": "zh_prose",
+        "is_natural_language": 1,
+        "response": "No. 因为直接干预乙（B）会切断甲（A）对丙（C）的影响路径，因此事件A不再导致事件C。",
+        "correct": true,
+        "model": "qwen3-235b-a22b"
+      }
+    ]
+  }
+}
